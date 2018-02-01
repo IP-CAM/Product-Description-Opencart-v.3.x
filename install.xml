@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Parcelamento na página de Produto para Opencart 3.0.x</name>
+	<code>parcelamento</code>
+	<version>1.0</version>
+	<author>Vitor Pereira - vitor_gja_@hotmail.com</author>
+	<file path="admin/controller/common/column_left.php">
+		<operation>
+			<search><![CDATA[]]></search>
+			<add position="After"><![CDATA[]]></add>
+		</operation>
+	</file>
+</modification>

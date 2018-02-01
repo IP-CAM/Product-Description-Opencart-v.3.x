@@ -1,0 +1,14 @@
+<div class="dropdown">
+  <a class=" dropdown-toggle" type="button" id="ver-parcelas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Ver Parcelas
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="ver-parcelas">
+  	{% for p in parcelas %}
+    <li><a class="pl-2">{{ p.parcela }}x de {{ p.valor }}. <small>{% if p.juros %} {{text_with_juros}} {% else %} {{ text_nothing_juros }}{% endif %}</small></a></li>
+    {% endfor %}
+    <li role="separator" class="divider"></li>
+    <li><a class="pl-2">{{ juros }}</a></li>
+  </ul>
+</div>
+<hr>
